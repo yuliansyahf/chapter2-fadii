@@ -1,8 +1,6 @@
 import Link from 'next/link';
 import { blogPosts } from "../data/root/blog";
 
-
-
 export default function BlogPage() {
   return (
     <main className="container mx-auto">
@@ -13,7 +11,7 @@ export default function BlogPage() {
         </h1>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {blogPosts.map((post, index) => (
+          {blogPosts.map((post) => (
             <div
               key={post.slug}
               className="bg-[#1C73C9] border border-[#1C73C9]  p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
